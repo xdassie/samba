@@ -6,8 +6,8 @@ VOLUME ["/shares"]
 
 EXPOSE 139 445
 
-RUN git clone -b 4.9.4 https://github.com/ServerContainers/samba.git && find ./
-RUN cp ServerContainers/scripts /usr/local/bin/
+RUN mkdir /tmp/gitclone && cd /tmp/gitclone &&  git clone -b 4.9.4 https://github.com/ServerContainers/samba.git && find /tmp/gitclone
+RUN cp /tmp/gitclone/samba/scripts /usr/local/bin/
 #COPY scripts /usr/local/bin/
 
 HEALTHCHECK CMD ["docker-healthcheck.sh"]
