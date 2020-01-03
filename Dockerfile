@@ -7,7 +7,7 @@ RUN export samba_version=4.9.4 \
  && apt-get -q -y update \
  && apt-get -q -y install build-essential \
                           wget \
- && apt-get -q -y install acl \
+ && apt-get -q -y install git acl \
                           attr \
                           autoconf \
                           bison \
