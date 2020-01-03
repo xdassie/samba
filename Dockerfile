@@ -73,7 +73,9 @@ VOLUME ["/shares"]
 
 EXPOSE 139 445
 
-COPY scripts /usr/local/bin/
+RUN git clone -b 4.9.4 https://github.com/ServerContainers/samba.git
+RUN cp ServerContainers/scripts /usr/local/bin/
+#COPY scripts /usr/local/bin/
 
 HEALTHCHECK CMD ["docker-healthcheck.sh"]
 ENTRYPOINT ["entrypoint.sh"]
