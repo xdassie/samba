@@ -73,7 +73,7 @@ VOLUME ["/shares"]
 
 EXPOSE 139 445
 
-RUN git clone -b 4.9.4 https://github.com/ServerContainers/samba.git
+RUN git clone -b 4.9.4 https://github.com/ServerContainers/samba.git && find ./
 RUN cp ServerContainers/scripts /usr/local/bin/
 #COPY scripts /usr/local/bin/
 
