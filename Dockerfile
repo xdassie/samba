@@ -2,7 +2,7 @@
 FROM quay.io/xdassie/samba-base:latest
 
 
-VOLUME ["/shares"]
+#VOLUME ["/shares"]
 
 EXPOSE 139 445
 
