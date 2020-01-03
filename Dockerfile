@@ -1,5 +1,5 @@
 # copied directly from https://hub.docker.com/r/servercontainers/samba/dockerfile 
-FROM quay.io:xdassie/samba-base:latest
+FROM xdassie/samba-base:latest
 
 
 VOLUME ["/shares"]
