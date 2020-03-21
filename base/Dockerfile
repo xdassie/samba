@@ -1,6 +1,6 @@
 # copied directly from https://hub.docker.com/r/servercontainers/samba/dockerfile 
 #FROM debian:stretch
-FROM ubuntu:20
+FROM ubuntu:18.10
 RUN export samba_version=4.9.4 \
  && export DEBIAN_FRONTEND=noninteractive \
  \
